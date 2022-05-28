@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background: #DDD;
+    padding: 15px;
+}
+
+
+.parent {
+
+    display: grid;
+    margin: auto;
+    background-color: #ddd;
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "one one one one one one   "
+        "two two two  three three three  "
+        "two two two  three three three";
+
+
+
+
+}
+
+.one {
+    grid-area: one;
+    background-color: #ffffff;
+}
+
+.two {
+    grid-area: two;
+    background-color: #2eb6b4;
+}
+
+.three {
+    grid-area: three;
+    background-color: #2bb3b1;
+}
+
+.one,
+.two,
+.three {
+    padding: 15px;
+}
+
+.first {
+    color: hsl(179, 62%, 43%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.head {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.par {
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.second {
+    color: white;
+    font-size: 20px;
+}
+
+span {
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    color: hsl(204, 43%, 93%);
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+    margin-top: 30px;
+    text-transform: capitalize;
+    line-height: 22px;
+
+}
+
+.but {
+    width: 209px;
+    height: 50px;
+    background-color: #c2de41;
+    border-radius: 5px;
+    margin-left: 13px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-color: transparent;
+    font-weight: 700;
+    box-shadow: 0px 3px 3px 0px black;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+}
+
+@media (min-width:768px) {
+    .parent {
+        width: 750px;
+    }
+}
